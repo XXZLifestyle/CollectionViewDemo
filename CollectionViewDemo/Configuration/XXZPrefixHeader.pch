@@ -1,0 +1,48 @@
+//
+//  XXZPrefixHeader.pch
+//  Author From Xavier Zachary
+//
+//  Created by Zachary on 14/4/10.
+//  Copyright © 2015年 com.xxzing.future. All rights reserved.
+//
+
+#ifndef XXZPrefixHeader_pch
+#define XXZPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+/* ***************************************************** */
+#import "XXZFontAndColor.h"
+#import "XXZFuncMethod.h"
+#import "XXZLogMethod.h"
+#import "XXZSandBox.h"
+#import "XXZConstant.h"
+#import "XXZInterface.h"
+#import "XXZFrame.h"
+#import "XXZOther.h"
+#import "XXZUnit.h"
+
+/* ***************************************************** */
+#import "MBProgressHUD+Addition.h"
+#import "XXZShowAlert.h"
+#import "XXZNet.h"
+
+/* ***************************************************** */
+//coding...
+
+
+#endif /*__OBJC__*/
+
+#endif /* XXZPrefixHeader_pch */
